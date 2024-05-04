@@ -1,0 +1,30 @@
+.main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 768px){
+    .main_content{
+        flex-direction: column;
+    }
+    
+}
+
+.text_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.text_content > h1 {
+    margin: 0;
+}
+
+.hero_image > img{
+    cursor: pointer;
+    object-fit: cover;
+}
+
