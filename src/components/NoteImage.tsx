@@ -23,10 +23,19 @@ const StyledPlayButton = styled.button`
   cursor: pointer; 
 `
 
+const StyledMockupImage = styled.img`
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  aspect-ratio: 768/432;
+`
+
 function NoteImage() {
   return (
     <StyledNoteImage>
-      <img src={NoteImageWebP} loading='lazy' decoding='async' alt="Imagen de notebook" />
+      <StyledMockupImage src={NoteImageWebP} alt="Notebook" loading='lazy' decoding='async'/>
       <StyledPlayButton>
         {/* <PlayIcon /> */}
         <img src={PlayIcon} alt="Play icon" />
