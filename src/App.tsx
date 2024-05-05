@@ -1,6 +1,7 @@
 import NavBar from '@sections/NavBar/index'
 import LandingView from '@sections/LandingView/index'
 import FeaturesView from '@sections/FeaturesView/index'
+import ToolsView from '@sections/ToolsView/index'
 import Footer from '@sections/Footer/index'
 import './styles.css'
 
@@ -10,7 +11,7 @@ function App() {
       <NavBar />
       <LandingView />
       <FeaturesView />
-      {/* <ToolsView /> */}
+      <ToolsView />
       <Footer />  
     </div>
   )
