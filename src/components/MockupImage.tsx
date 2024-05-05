@@ -8,12 +8,12 @@ const StyledMockupImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-  aspect-ratio: 664/702;
+  aspect-ratio: attr(width) / attr(height);
 `
 
 function MockupImage() {
   return (
-    <StyledMockupImage src={MockupSVG} alt="Mockup" />
+    <StyledMockupImage src={MockupSVG} alt="Mockup"/>
   )
 }
 

@@ -28,14 +28,13 @@ const StyledMockupImage = styled.img`
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
   aspect-ratio: 768/432;
 `
 
 function NoteImage() {
   return (
     <StyledNoteImage>
-      <StyledMockupImage src={NoteImageWebP} alt="Notebook" loading='lazy' decoding='async'/>
+      <StyledMockupImage src={NoteImageWebP} alt="Notebook" loading='lazy' decoding='async' />
       <StyledPlayButton>
         {/* <PlayIcon /> */}
         <img src={PlayIcon} alt="Play icon" />

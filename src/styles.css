@@ -1,19 +1,7 @@
 .home_container{
-    padding: 0 112px;
+    /* padding: 0 112px; */
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 10rem;
-}
-
-@media only screen and (max-width: 768px){
-    .home_container{
-        padding: 0 32px;
-    }
-}
-
-@media only screen and (max-width: 375px){
-    .home_container{
-        padding: 0 16px;
-    }
 }
