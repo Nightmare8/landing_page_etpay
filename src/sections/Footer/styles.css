@@ -61,3 +61,8 @@ hr {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+html {
+	visibility: visible;
+	opacity: 1;
+}
