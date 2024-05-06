@@ -8,7 +8,37 @@ import ZapierSVG from "@assets/svg/zapier.svg";
 
 import styled from "styled-components";
 
+const StyledTooltip = styled.span`
+	cursor: default;
+	width: max-content;
+	background-color: #333;
+	color: white;
+	font-size: larger;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 6px;
+
+	/* Position the tooltip text - to top*/
+	position: absolute;
+	z-index: 100;
+	bottom: 120%;
+	left: 50%;
+	transform: translateX(-55%);
+	opacity: 0;
+	::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: whitesmoke transparent transparent transparent;
+	}
+`;
+
 const StyledCardIconTech = styled.article`
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,6 +52,10 @@ const StyledCardIconTech = styled.article`
 	:hover {
 		transform: scale(1.1);
 		transition: transform 0.5s;
+		${StyledTooltip} {
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 `;
 
@@ -39,6 +73,7 @@ function CardIconTech({ tech }: { tech: string }) {
 	return (
 		<StyledCardIconTech>
 			<img src={ImagesTech[tech]} alt={tech} />
+			<StyledTooltip>{tech}</StyledTooltip>
 		</StyledCardIconTech>
 	);
 }
