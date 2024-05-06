@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { setMode } from "../store/modeSlice";
-import { RootState } from "@reduxjs/toolkit/query";
+import type { RootState } from "../store/index";
 
 const StyledButton = styled.button`
 	background-color: transparent;
