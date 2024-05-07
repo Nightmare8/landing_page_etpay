@@ -22,7 +22,7 @@ function PrimaryButton({ title }: { title: string }) {
 		<StyledButton>
 			<Typography
 				variant="p"
-				variantClass="p xs"
+				variantClass="p xs semibold"
 				type="neutral"
 				numberPallete={100}
 			>

@@ -17,6 +17,7 @@ const variantClasses: { [key: string]: string } = {
 	"p semibold": "font-size: 18px; font-weight: 600;",
 	"p sm": "font-size: 16px; font-weight: 400;",
 	"p xs": "font-size: 14px; font-weight: 400;",
+	"p xs semibold": "font-size: 14px; font-weight: 600;",
 };
 
 //Define the HTML tags that can be used
