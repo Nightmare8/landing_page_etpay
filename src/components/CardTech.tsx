@@ -27,7 +27,7 @@ const StyledCardTech = styled.article`
 	justify-content: center;
 	gap: 1rem;
 	padding: 1rem 1rem;
-
+	text-align: center;
 	header {
 		display: flex;
 		flex-direction: column;
