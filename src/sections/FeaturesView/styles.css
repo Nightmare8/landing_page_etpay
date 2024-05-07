@@ -19,6 +19,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .note_header_content > h1 {
 	margin: 0;
@@ -41,6 +42,11 @@
 	}
 	.features_grid {
 		grid-template-columns: repeat(2, 1fr);
+		gap: 0rem;
+	}
+	.note_header_content > h1 {
+		font-size: 36px;
+		line-height: 48px;
 	}
 }
 

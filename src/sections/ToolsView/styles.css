@@ -1,12 +1,11 @@
 .tool {
 	position: relative;
+	padding: 0 112px;
 }
 .tools_content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	padding: 0 112px;
 	gap: 32px;
 	margin-top: 64px;
 	position: relative;
@@ -49,13 +48,14 @@
 .circle_tool_background {
 	position: absolute;
 	top: 0;
-	left: 18%;
 	z-index: -1;
 }
 
 @media only screen and (max-width: 768px) {
-	.tools_content {
+	.tool {
 		padding: 0 40px;
+	}
+	.tools_content {
 		flex-direction: column;
 		gap: 32px;
 	}
@@ -64,6 +64,42 @@
 		text-align: center;
 	}
 	.circle_tool_background {
-		left: 6%;
+		left: 5%;
+		padding: 48px 88px 96px 88px;
+	}
+	.circle_tool_background > img {
+		width: 500px;
+	}
+	.header_content > h2 {
+		font-size: 48px;
+		line-height: 60px;
+	}
+	.tools_icon_container {
+		gap: 24px;
+	}
+	.centered_row {
+		gap: 24px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.tool {
+		padding: 0 24px;
+	}
+	.circle_tool_background {
+		padding: 48px 48px 96px 48px;
+	}
+	.circle_tool_background > img {
+		width: 300px;
+	}
+	.header_content > h2 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.tools_icon_container {
+		gap: 16px;
+	}
+	.centered_row {
+		gap: 16px;
 	}
 }

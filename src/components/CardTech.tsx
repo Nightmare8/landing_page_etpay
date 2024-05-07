@@ -26,7 +26,6 @@ const StyledCardTech = styled.article`
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
-	padding: 1rem 1rem;
 	text-align: center;
 	header {
 		display: flex;
@@ -46,16 +45,21 @@ const StyledCardTech = styled.article`
 		}
 	}
 
-	@media screen and (min-width: 768px) {
-		padding: 0rem 0rem;
+	@media screen and (max-width: 768px) {
 	}
 	@media screen and (max-width: 375px) {
 		flex-direction: row;
 		header {
 			padding-inline: 0rem;
 			align-items: flex-start;
+			h2 {
+				font-size: 20px;
+				line-height: 28px;
+				text-align: left;
+			}
 			p {
 				text-align: left;
+				font-size: 14px;
 			}
 		}
 	}

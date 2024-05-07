@@ -24,6 +24,12 @@ const StyledCardIconTech = styled.article`
 		transform: scale(1.1);
 		transition: transform 0.5s;
 	}
+
+	@media only screen and (max-width: 518px) {
+		img {
+			width: 90px;
+		}
+	}
 `;
 
 const StyledTooltip = styled.span`
